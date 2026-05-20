@@ -1,0 +1,95 @@
+# =============================================================================
+# researcher_os_lite : .gitignore
+# -----------------------------------------------------------------------------
+# 研究の現場でよく出てくる「git管理したくないもの」をまとめてあります。
+# 各自の研究文脈に応じて、必要に応じて追記してください。
+# =============================================================================
+
+
+# ---- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.installed.cfg
+*.egg
+
+
+# ---- Virtual environments -------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
+
+
+# ---- Jupyter / IPython ----------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+
+# ---- Editor / IDE ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+
+# ---- AI agent local state -------------------------------------------------
+# Claude Code, Cursor, Antigravity, Codex などが作る一時ファイル
+.claude/
+.cursor/
+.antigravity/
+.codex/
+.aider*
+.continue/
+
+
+# ---- Research outputs (研究成果物) ----------------------------------------
+# 図、データ、ログは git で運ばない（容量・再現性の観点）
+figures/
+output/
+outputs/
+results/
+logs/
+*.log
+
+
+# ---- Data (観測・実験データ) -----------------------------------------------
+# データ本体は git に入れず、Dataset Registry 経由でローカル参照する想定。
+# 小さなサンプルデータを意図的に含める場合は、その都度コミットを除外解除。
+data/
+*.nc
+*.netcdf
+*.hdf
+*.h5
+*.mat
+*.parquet
+
+
+# ---- Secrets / Credentials ------------------------------------------------
+# APIキー、認証情報、個人設定は絶対に git に入れない
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.yaml
+datasets.local.yaml
+
+
+# ---- OS / Misc ------------------------------------------------------------
+*.tmp
+*.bak
+*.orig
+.cache/
