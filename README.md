@@ -118,4 +118,5 @@ Apache License 2.0 でリリースしています（`LICENSE` ファイル参照
 
 - 元になった発想：[ChatGPT × Claude Code で AI 駆動研究環境を構築する](https://note.com/motesaku/n/nf528764fa77d)
 - フルセット版：開発中（個別研究文脈に強く依存）
-- 連絡先：（公開時にご記入ください）
+- 連絡先：moteki@jamstec.go.jp
+
